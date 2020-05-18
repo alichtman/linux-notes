@@ -2,6 +2,9 @@
 
 Ah, hello. You're probably here because you're having some issues. Welcome to GPUs on Linux.
 
+- https://askubuntu.com/questions/1240879/rx-5500-xt-ubuntu-20-10-instability-crashing-drmamdgpu-dm-commit-planes-cons
+- https://www.reddit.com/r/AMDHelp/comments/glxbpx/rx_5500_xt_ubuntu_2010_issues_instability_crashing/
+
 ## Using `amdgpu` Drivers
 
 ```bash
