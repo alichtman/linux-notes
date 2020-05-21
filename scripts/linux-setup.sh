@@ -129,6 +129,7 @@ sudo apt install -y \
     git-extras \
     gnome-software-plugin-flatpak \
     gnupg2 \
+    golang-1.14-go \
     htop \
     hub \
     libclang-dev \
@@ -144,6 +145,7 @@ sudo apt install -y \
     polybar \
     ranger \
     silversearcher-ag \
+    sxhkd \
     spotify-client \
     steam \
     tmux \
@@ -153,6 +155,10 @@ sudo apt install -y \
     yq \
     p7zip-full \
     p7zip-rar
+
+ln -s /usr/lib/go-1.14/bin/go /usr/local/bin/go
+
+go get github.com/charmbracelet/glow
 
 # Set up flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
