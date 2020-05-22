@@ -2,6 +2,14 @@
 
 Ah, hello. You're probably here because you're having some issues. Welcome to GPUs on Linux.
 
+## GPU Crashing
+
+The fix is to upgrade to kernel `v5.7`.
+
+Fix: https://gitlab.freedesktop.org/drm/amd/-/issues/1149#note_505991
+
+**Cross References**
+
 - https://askubuntu.com/questions/1240879/rx-5500-xt-ubuntu-20-10-instability-crashing-drmamdgpu-dm-commit-planes-cons
 - https://www.reddit.com/r/AMDHelp/comments/glxbpx/rx_5500_xt_ubuntu_2010_issues_instability_crashing/
 

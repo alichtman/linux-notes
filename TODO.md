@@ -1,19 +1,28 @@
 # TODOs
 
-## Critical
+## Roadmap
 
-1. Copy files from Jon's laptop to my Kali VM
-2. Timeshift setup
+- bspwm
+- polybar
+- rofi
+- sxhkd
+- shallow-backup dots
+- Keyboard issues (numpad support)
 
 
-## Nice to Have
+## Staging
 
-- kripton theme
+- Copy files from Jon's laptop to my Kali VM
+- Timeshift setup
+
+## Backlog
+
+- Run OpenRGB on startup
+- kripton icons
 - zsh-history-substring-search
+    * Fix keybindings in zshrc!
 - Install pyenv
     * /usr/local/bin permission error
-- Fix plymouth boot splash
-- Add swapspace
 - polybar
     * [spotify plugin](https://github.com/Jvanrhijn/polybar-spotify)
     * [cpu](https://github.com/polybar/polybar/wiki/Module:-cpu)
@@ -33,9 +42,11 @@
 - Skip grub menu, boot directly into Ubuntu
 - sxhkd + key remappings
     * sxhkd autostart in xinit?
-- Pick new terminal?
-    * Luke's st build
-        + https://www.youtube.com/watch?v=FJmm7wl4JUI
+    * Why do maps with SUPER not work?
+        + Switch everything to ALT?
+- st build
+    * https://www.youtube.com/watch?v=FJmm7wl4JUI
+    * Images in neofetch?
 - Dotfiles
     * https://github.com/3ximus/dotfiles
         + bspwm
@@ -43,3 +54,11 @@
         + polybar
         + Color change spotify
         + blur fullscreen rofi
+- Fix plymouth boot splash
+
+
+```bash
+if [[ "$(tty)" = "/dev/tty1" ]]; then
+    pgrep bspwm || startx
+fi
+```
