@@ -7,13 +7,12 @@
 - rofi
 - sxhkd
 - shallow-backup dots
-- Keyboard issues (numpad support)
-
 
 ## Staging
 
-- Copy files from Jon's laptop to my Kali VM
 - Timeshift setup
+- Add `ifconfig tun0 | awk '/inet / {print $2}'` to ~/.config/tmux/scripts/htb_ip.sh
+- htb_script.sh from gist.github.com
 
 ## Backlog
 
@@ -55,6 +54,9 @@
         + Color change spotify
         + blur fullscreen rofi
 - Fix plymouth boot splash
+- Dual boot Windows on separate SSD?
+    * Make sure not to buy the same brand!!
+    * https://askubuntu.com/questions/1033497/dual-boot-windows-10-and-linux-ubuntu-on-separate-ssd
 
 
 ```bash

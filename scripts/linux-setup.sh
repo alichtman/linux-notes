@@ -201,6 +201,12 @@ mkdir ~/open-source-software
 git clone https://github.com/andreafrancia/trash-cli.git ~/open-source-software/trash-cli
 cd ~/open-source-software/trash-cli
 sudo python3 setup.py install --user
+
+# Install transcrypt
+git clone https://github.com/elasticdog/transcrypt.git ~/open-source-software/transcrypt
+cd ~/open-source-software/transcrypt
+ln -s $(realpath transcrypt) ~/bin/transcrypt
+
 cd
 
 # tmux setup
