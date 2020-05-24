@@ -16,3 +16,12 @@ alichtman ALL=(ALL) NOPASSWD: /home/alichtman/open-source-software/OpenRGB/OpenR
 ```
 Defaults !tty_tickets
 ```
+
+## Don't reset ENV vars (like `$PATH`) when I sudo
+
+https://unix.stackexchange.com/a/83265
+
+This makes the system notably less secure, but it's infuriating to work on a system without this.
+
+1. Comment out secure_path
+2. Comment out env_reset
