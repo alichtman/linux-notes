@@ -3,7 +3,12 @@
 https://wiki.archlinux.org/index.php/Rsync#As_a_backup_utility
 
 
-**TODO: Upgrade to snapshots**
+## TODO
+
+- Snapshot backup (TimeMachine style)
+    * https://github.com/cytopia/linux-timemachine
+    * Back In Time
+    * https://itsfoss.com/backup-restore-linux-timeshift/
 
 ## Full System Backup
 
@@ -15,7 +20,7 @@ $ sudo fdisk -l
 # Mount it (replace /dev/sda if needed)
 $ sudo mount /dev/sda /mnt
 # rsync / to /mnt, excluding unnecessary dirs
-$ sudo rsync -aAXv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} / /media/alichtman/Backup
+$ sudo rsync -aAXv --info=progress2 --no-inc-recursive --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} / /media/alichtman/Backup
 ```
 
 ## Reinstallation
@@ -29,9 +34,5 @@ $ sudo fdisk -l
 # Mount it (replace /dev/sda if needed)
 $ sudo mount /dev/sda /mnt
 # rsync / to /mnt, excluding unnecessary dirs
-$ sudo rsync -aAXv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} /mnt /
+$ sudo rsync -aAXv --info=progress2 --no-inc-recursive --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} /mnt /
 ```
-
-## TODO
-
-- Snapshot backup (TimeMachine style)
