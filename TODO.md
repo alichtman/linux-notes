@@ -6,7 +6,6 @@
 - polybar
 - rofi
 - sxhkd
-- shallow-backup dots
 
 ## Staging
 
@@ -17,6 +16,20 @@
 ## Backlog
 
 - Run OpenRGB on startup
+
+```
+[Unit]
+Description=OpenRGB control
+
+[Service]
+Type=oneshot
+ExecStart=/opt/OpenRGB/OpenRGB -c 080808 -m Static
+User=nobody
+Group=i2c
+
+[Install]
+WantedBy=multi-user.target
+```
 
 - zinit completions folder not always created bug
 
@@ -58,7 +71,6 @@
 - Dual boot Windows on separate SSD?
     * Make sure not to buy the same brand!!
     * https://askubuntu.com/questions/1033497/dual-boot-windows-10-and-linux-ubuntu-on-separate-ssd
-
 
 ```bash
 if [[ "$(tty)" = "/dev/tty1" ]]; then
