@@ -16,6 +16,9 @@ Save, boot, then shut down and turn the PSU off. Boot up and you should be good.
 
 Free license through UIUC Web Store.
 
+### Promiscuous Mode for Wireshark
+
+https://bbs.archlinux.org/viewtopic.php?pid=1503727#p1503727
 
 ## Virtualbox
 
