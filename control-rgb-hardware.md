@@ -77,3 +77,5 @@ $ sudo ./OpenRGB
 Follow OpenRGB setup instructions to add necessary kernel modules (first temporarily with `modprobe`, and then permanently in `/etc/modules`.)
 
 Must add `acpi_enforce_resources=lax` to `/etc/default/grub` `GRUB_CMDLINE_LINUX_DEFAULT` and run `$ sudo update-grub`
+
+Blacklist `i2c-nvidia-gpu` kernel module.

@@ -47,6 +47,16 @@ WantedBy=multi-user.target
     * [temp](https://github.com/polybar/polybar/wiki/Module:-temperature)
     * https://arcolinux.com/all-modules-that-are-available-for-polybar-any-desktop/
     * [toggl](https://github.com/jduar/toggl_tools)
+    * D/U speed
+    * Date / Time
+    * # of desktops
+    * Power menu
+    * Volume indicator
+    * Host name
+    * Notifications
+    * Music
+    * Wifi Menu + Ssid
+    * Weather
 
 - rofi
     * theme
