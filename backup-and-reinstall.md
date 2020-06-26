@@ -1,16 +1,16 @@
 # Backup and Reinstall
 
+## Snapshot Method
+
+https://itsfoss.com/backup-restore-linux-timeshift/
+
+Make sure to back up ALL files, including `/home`. Exclude `/media` and `/tmp`. Use an external drive or this backup is useless. Remember to configure how many backups to keep for how long...
+
+## Rsync Method
+
 https://wiki.archlinux.org/index.php/Rsync#As_a_backup_utility
 
-
-## TODO
-
-- Snapshot backup (TimeMachine style)
-    * https://github.com/cytopia/linux-timemachine
-    * Back In Time
-    * https://itsfoss.com/backup-restore-linux-timeshift/
-
-## Full System Backup
+### Full System Backup
 
 Ubuntu automatically mounts drives for you under `/media/alichtman`, so the mounting step isn't needed. Just run the `rsync` command.
 
@@ -23,7 +23,7 @@ $ sudo mount /dev/sda /mnt
 $ sudo rsync -aAXv --info=progress2 --no-inc-recursive --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} / /media/alichtman/Backup
 ```
 
-## Reinstallation
+### Reinstallation
 
 To reinstall, repeat the same steps, but reverse the source and the destination.
 

@@ -67,19 +67,19 @@ $ grep "Swap" /proc/meminfo
 
 # Create empty file. This command will create a 1GB file which means +1GB swap space for your system
 # If you want to make 3GB file, then change count value to count=3M. See man dd for more information.
-$ sudo dd if=/dev/zero of=/media/alichtman/swapfile.img bs=1024 count=1M
+$ sudo dd if=/dev/zero of=/swapfile bs=1024 count=1M
 
 # Fix permissions
-$ sudo chmod 0600 /media/alichtman/swapfile.img
+$ sudo chmod 0600 /swapfile
 
 # Make it a swap file
-$ sudo mkswap /media/alichtman/swapfile.img
+$ sudo mkswap /swapfile
 
 # Bring up on boot
 # To make sure that your new swap space is activated while booting up computer you should add it to filesystem configuration file (/etc/fstab). Add it to end of file, this is recommended because other filesystems (at least one that contains swap file) must be mounted in read-write mode before we can access any files.
 # Add this line to /etc/fstab at the end
-/media/alichtman/swapfile.img swap swap sw 0 0
+/swapfile swap swap sw 0 0
 
 # Activate
-$ sudo swapon /media/alichtman/swapfile.img
+$ sudo swapon /swapfile
 ```

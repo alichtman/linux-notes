@@ -25,7 +25,7 @@ if [[ $EUID -eq 0 ]]; then
 fi
 
 # Remove bloat
-sudo apt-get purge thunderbird* -y
+sudo apt-get purge thunderbird* totem totem-plugins -y
 sudo apt remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku
 
 # Set up repos for installation
@@ -152,6 +152,7 @@ sudo apt install -y \
     xsel \
     wireshark \
     virtualbox \
+    vlc \
     yq \
     p7zip-full \
     p7zip-rar
