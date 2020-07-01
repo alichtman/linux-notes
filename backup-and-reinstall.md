@@ -6,6 +6,14 @@ https://itsfoss.com/backup-restore-linux-timeshift/
 
 Make sure to back up ALL files, including `/home`. Exclude `/media` and `/tmp`. Use an external drive or this backup is useless. Remember to configure how many backups to keep for how long...
 
+### Restoring from Timeshift
+
+**NEVER** restore from the GUI. It's unstable.
+
+```bash
+$ sudo timeshift --restore
+```
+
 ## Rsync Method
 
 https://wiki.archlinux.org/index.php/Rsync#As_a_backup_utility

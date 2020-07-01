@@ -132,6 +132,7 @@ fi
 
 ### bspwm
 
+- https://youtu.be/k7z1CkpsYgQ
 - https://github.com/windelicato/dotfiles/wiki/bspwm-for-dummies
 - https://www.reddit.com/r/unixporn/comments/gfhons/bspwm_im_a_thief/
 - https://protesilaos.com/pdfd/basics-my-bspwm/
