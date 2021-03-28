@@ -9,3 +9,9 @@ https://github.com/neomutt/neomutt
 ```
 
 Set it up with this: https://github.com/LukeSmithxyz/mutt-wizard
+
+Set up offline email with `mbsync`.
+
+## Contacts
+
+Use `goobook`. https://gitlab.com/goobook/goobook

@@ -9,5 +9,7 @@ https://github.com/davatorium/rofi
 $ apt install rofi
 ```
 
+## Scripts
 
-https://github.com/adi1090x/rofi -- A collection of custom applets and menus made using rofi and its dmenu emulation.
+- [rofi-bangs](https://www.youtube.com/watch?v=kxJClZIXSnM)
+- [rofi clipboard](https://github.com/gotbletu/shownotes/blob/master/rofi_clipboard_via_greenclip.md)

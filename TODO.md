@@ -7,12 +7,6 @@
 - rofi
 - sxhkd
 
-## Staging
-
-- Timeshift setup
-- Add `ifconfig tun0 | awk '/inet / {print $2}'` to ~/.config/tmux/scripts/htb_ip.sh
-- htb_script.sh from gist.github.com
-
 ## Backlog
 
 - Run OpenRGB on startup
@@ -128,6 +122,7 @@ fi
 - https://gitlab.com/vahnrr/rofi-menus#simpler-menu-summoning
 - https://github.com/davatorium/rofi/wiki/themes
 - https://github.com/carnager/teiler
+- https://github.com/manilarome/rofi-spotlight
 
 
 ### bspwm
