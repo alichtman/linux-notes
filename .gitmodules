@@ -1,3 +1,0 @@
-[submodule "scripts/ubuntu-mainline-kernel.sh"]
-	path = scripts/ubuntu-mainline-kernel.sh
-	url = git@github.com:pimlie/ubuntu-mainline-kernel.sh.git
